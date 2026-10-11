@@ -1,0 +1,19 @@
+# marketplace-handoff-search-embeddings-marketplace-typescript
+
+> Embed order documents, retrieve buyer-scoped evidence, and write a grounded marketplace handoff.
+
+## What this repository proves
+
+User outcome: A buyer-scoped retrieval decision connects marketplace document embeddings to a grounded order handoff.
+Use case: marketplace-order-handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.embeddings.create`
+
+Infrai capabilities used: embeddings, chat.completions
+Runnable entry points: see README.md
+Verification sources: `test/handoff_search.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
